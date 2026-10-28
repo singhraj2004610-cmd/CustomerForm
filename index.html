@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formHeader">
+            <div class="HeaderName">
+                <h1>New Customer</h1>
+            </div>
+
+            <div class="HeaderButtons">
+                <button type="submit" class="SaveButton" form="req">Save</button>
+                <button type="reset" class="ClearButton" form="customerDetailss">X</button>
+            </div>
+        </div>
+        <!-- customer Details starts here -->
+        <form class="containerClear" id="customerDetailss">
+            <div class="customerDetails">
+                <form id="req">
+                    <div class="Cname">
+                        <label for="Cname">Customer Name*</label>
+                        <input type="text" name="Cname" id="Cname" placeholder="e.g.Rajababu Patel" required
+                            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
+                    </div>
+                </form>
+
+                <div class="alias">
+                    <label for="alias">Alias</label>
+                    <input type="text" name="alias" id="alias" placeholder="e.g.RP">
+                </div>
+
+                <div class="code">
+                    <label for="code">Code</label>
+                    <input type="number" name="code" id="code" placeholder="Auto-assigned on save (or click to search)">
+                </div>
+
+                <div class="panVat">
+                    <label for="panVat">PAN / VAT no.</label>
+                    <input type="number" name="panVat" id="panVat" placeholder="Registration Number">
+                </div>
+
+                <div class="tel">
+                    <label for="tel">Mobile no.</label>
+                    <input type="text" name="tel" id="tel" placeholder=" 98XXXXXXXX"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="e.g.raja@123gmail.com">
+                </div>
+
+                <div class="UGroup">
+                    <label for="UGroup">Under Group*</label>
+                    <select name="UGroup" id="UGroup" required>
+                        <option value="nepal">Nepal</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                        <option value="china">China</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="germany">Germany</option>
+                        <option value="uk">Uk</option>
+                        <option value="island">Island</option>
+                    </select>
+                </div>
+
+                <div class="APurchase">
+                    <input type="checkbox" name="APurchase" id="APurchase">
+                    <label for="APurchase">Allow Purchase</label>
+                </div>
+            </div>
+            </form>
+            <div class="FAddrress">
+                <label for="FAddrress">Full Address</label>
+                <textarea name="FAddrress" id="FAddrress" placeholder="street, city, state, ZIP..."></textarea>
+            </div>
+            <!-- customer details ends here -->
+
+            <div class="bottomDetail">
+                <div>
+                    <h4 id="title">Account & notification preferences</h4>
+                </div>
+
+                <div class="bottomContent">
+                    <div class="ch">
+                        <input type="checkbox" name="acc" id="acc">
+                        <label for="Acc">Yes</label>
+                        <input type="checkbox" name="acc" id="acc">
+                        <label for="Acc">No</label>
+                        <h3>Account active</h3>
+                    </div>
+
+                    <div class="ch">
+                        <input type="checkbox" name="sms" id="sms">
+                        <label for="sms">Yes</label>
+                        <input type="checkbox" name="sms" id="sms">
+                        <label for="sms">No</label>
+                        <h3>SMS alert</h3>
+                    </div>
+
+                    <div class="ch">
+                        <input type="checkbox" name="email" id="email">
+                        <label for="email">Yes</label>
+                        <input type="checkbox" name="email" id="email">
+                        <label for="email">No</label>
+                        <h3>Email alert</h3>
+                    </div>
+
+                    <div class="ch">
+                        <input type="checkbox" name="push" id="push">
+                        <label for="push">Yes</label>
+                        <input type="checkbox" name="push" id="push">
+                        <label for="push">No</label>
+                        <h3>Push notification</h3>
+                    </div>
+                </div>
+            </div>
+        </form>
+</body>
+</html>

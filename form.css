@@ -1,0 +1,116 @@
+.body{
+    background-color: #f4f7fc;
+}
+
+.formHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.HeaderName{
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.SaveButton {
+    color: white;
+    background-color: blue;
+    
+}
+
+.ClearButton {
+    color: white;
+    background-color: red;
+    margin-right: 20px;
+}
+
+.customerDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#alias,
+#code,
+#panVat,
+#tel,
+#email,
+#UGroup,
+#Cname {
+    height: 30px;
+    border-radius: 3px;
+}
+
+
+
+.alias,
+.code,
+.panVat,
+.tel,
+.email,
+.UGroup,
+.Cname {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.APurchase{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.FAddrress {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+   margin-top: 15px;
+}
+
+#FAddrress {
+    height: 100px;
+    border-radius: 3px;
+}
+
+.bottomContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomDetail {
+    padding-top: 2;
+    border-radius: 10px;
+     margin-left: 40px;
+    margin-right: 40px;
+     padding-top: 30px;
+
+}
+
+.ch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    margin-left: 20px;
+}
+
